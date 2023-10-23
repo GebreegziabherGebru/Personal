@@ -366,7 +366,7 @@
                 </div>
             </div>
 
-            <form action="javascript:void(0);" method="post" role="form" class="php-email-form mt-4"
+            <form id="messageForm" action="javascript:void(0);" method="post" role="form" class="php-email-form mt-4"
                 onsubmit="submitForm(event)">
                 <div class="row">
                     <div class="col-md-4 form-group">
@@ -423,6 +423,7 @@
             errorMessage.textContent = "";
 
             document.querySelector(".error-message").style.display = "none";
+            document.querySelector(".error-message").style.display = "none";
 
             if (!name || !email || !subject || !message) {
                 errorMessage.textContent = "Please fill in all required fields.";
@@ -458,6 +459,7 @@
                 .then(data => {
                     if (data.success) {
                         document.querySelector(".sent-message").style.display = "block";
+                        document.getElementById("messageForm").reset();
                     } else {
                         document.querySelector(".error-message").style.display = "block";
                     }
