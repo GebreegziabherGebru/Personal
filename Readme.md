@@ -21,3 +21,6 @@ This repository contains the code and resources for my personal website. Here's 
 
 ## Day 5: Resume Section
 - Developed the "Resume" section, showcasing my professional and educational background.
+
+## Day 6: Blog Articls
+- Created Blog Article in medium.com and linked it to my website.
